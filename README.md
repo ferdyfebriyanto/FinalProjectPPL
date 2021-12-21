@@ -11,4 +11,4 @@
 
 ## Pengujian Website
 
-- [LMS Polinema](lms.polinema.ac.id)
+- [LMS Polinema](https://lms.polinema.ac.id)
