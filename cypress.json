@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://www.lms.polinema.ac.id",
+    "baseUrl": "https://lms.polinema.ac.id",
     "ignoreTestFiles": [
         "**/1-getting-started/*",
         "**/2-advanced-examples/*"
