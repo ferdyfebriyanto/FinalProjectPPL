@@ -12,26 +12,26 @@ describe('Login Scenario - 1941720173 / Sesha Dwi Lestari', () => {
             cy.get('.login > a').click()
             cy.get('#username').type('user')
             cy.get('#password').type('#')
-            cy.get('#loginbtn').click()
+            cy.get('#loginbtn').click().should('be.visible')
         })
 
         it('Valid Username & Invalid Password', () => { 
             cy.get('.login > a').click()
             cy.get('#username').type('#')
             cy.get('#password').type('password')
-            cy.get('#loginbtn').click()
+            cy.get('#loginbtn').click().should('be.visible')
         })
 
         it('Test Button Log In As A Guest', () => { 
             cy.get('.login > a').click()
-            cy.get('#guestlogin > .btn').click()
+            cy.get('#guestlogin > .btn').click().should('be.visible')
         })
 
         it('Valid Username & Valid Password', () => { 
             cy.get('.login > a').click()
             cy.get('#username').type('#')
             cy.get('#password').type('#')
-            cy.get('#loginbtn').click()
+            cy.get('#loginbtn').click().should('be.visible')
          })
 
     })
@@ -47,7 +47,7 @@ describe('Login Scenario - 1941720173 / Sesha Dwi Lestari', () => {
             cy.get('#username').type('#')
             cy.get('#password').type('#')
             cy.get('#loginbtn').click()
-            cy.get('.logo > img').click()        
+            cy.get('.logo > img').click().should('be.visible')        
         })
 
         it('Click Courses Item', () => {
@@ -55,7 +55,7 @@ describe('Login Scenario - 1941720173 / Sesha Dwi Lestari', () => {
             cy.get('#username').type('#')
             cy.get('#password').type('#')
             cy.get('#loginbtn').click()
-            cy.get('div.list-group-item > .m-l-0').click
+            cy.get('div.list-group-item > .m-l-0').click().should('be.visible')
         })
 
     })
