@@ -22,6 +22,8 @@ describe('Login', function (){
         // Input New Password 2
         cy.get('#id_submitbutton').should('be.visible').click()
         // Button Submit 
+         cy.get('[class="btn btn-primary"]').should('be.visible').click()   
+        // Button Countineu
     })
 })    
     
