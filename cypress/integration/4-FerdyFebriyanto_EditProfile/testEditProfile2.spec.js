@@ -35,7 +35,7 @@ describe('Edit Profile Scenario - 1941720007 / Ferdy Febriyanto', () => {
         cy.get('#id_city')
             .clear()
             .type('1234567')
-            .should('have.value', '1234567')
+            .should('have.value', 'Malang')
             .next()
         cy.get('#id_submitbutton')
             .click()
