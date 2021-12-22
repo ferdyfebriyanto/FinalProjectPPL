@@ -19,8 +19,7 @@ describe('Edit Profile Scenario - 1941720007 / Ferdy Febriyanto', () => {
 
         cy.get('#id_firstname')
             .clear()
-            .type('FERDY FEBRIYANTO')
-            .should('have.value', 'FERDY FEBRIYANTO')
+            .should('have.value', '')
             .next()
         cy.get('#id_lastname')
             .clear()
