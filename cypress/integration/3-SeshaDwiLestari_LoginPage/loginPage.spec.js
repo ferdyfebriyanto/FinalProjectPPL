@@ -11,13 +11,13 @@ describe('Login Scenario - 1941720173 / Sesha Dwi Lestari', () => {
         it('Invalid Username & Valid Password', () => { 
             cy.get('.login > a').click()
             cy.get('#username').type('user')
-            cy.get('#password').type('1941720173')
+            cy.get('#password').type('#')
             cy.get('#loginbtn').click()
         })
 
         it('Valid Username & Invalid Password', () => { 
             cy.get('.login > a').click()
-            cy.get('#username').type('1941720173')
+            cy.get('#username').type('#')
             cy.get('#password').type('password')
             cy.get('#loginbtn').click()
         })
@@ -29,8 +29,8 @@ describe('Login Scenario - 1941720173 / Sesha Dwi Lestari', () => {
 
         it('Valid Username & Valid Password', () => { 
             cy.get('.login > a').click()
-            cy.get('#username').type('1941720173')
-            cy.get('#password').type('1941720173')
+            cy.get('#username').type('#')
+            cy.get('#password').type('#')
             cy.get('#loginbtn').click()
          })
 
@@ -44,16 +44,16 @@ describe('Login Scenario - 1941720173 / Sesha Dwi Lestari', () => {
 
         it('Click Polinema Icon', () => { 
             cy.get('.login > a').click()
-            cy.get('#username').type('1941720173')
-            cy.get('#password').type('1941720173')
+            cy.get('#username').type('#')
+            cy.get('#password').type('#')
             cy.get('#loginbtn').click()
             cy.get('.logo > img').click()        
         })
 
         it('Click Courses Item', () => {
             cy.get('.login > a').click()
-            cy.get('#username').type('1941720173')
-            cy.get('#password').type('1941720173')
+            cy.get('#username').type('#')
+            cy.get('#password').type('#')
             cy.get('#loginbtn').click()
             cy.get('div.list-group-item > .m-l-0').click
         })
