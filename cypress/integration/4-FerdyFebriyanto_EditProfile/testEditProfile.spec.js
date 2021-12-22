@@ -1,4 +1,4 @@
-describe('Test Skenario 1', () => {
+describe('Edit Profile Scenario - 1941720007 / Ferdy Febriyanto', () => {
     it('Edit Profile Berhasil', () => {
         cy.visit('http://lms.polinema.ac.id/login/index.php')
         cy.get('#username')
